@@ -33,7 +33,7 @@
   <h3 align="center">django-dental-website</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A demo medical/dental office website built with Django & Bootstrap
     <br />
     <a href="https://github.com/drobb2020/django-dental-website"><strong>Explore the docs »</strong></a>
     <br />
