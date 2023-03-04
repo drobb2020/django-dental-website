@@ -88,7 +88,7 @@ This project was built with the following tools:
 - [Python](https://python.org)
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com)
-- [Bootstrapius](https://bootstrapious.com/)
+- [Bootstrapious](https://bootstrapious.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -100,7 +100,7 @@ This project was presented as a course project at [codemy.com](https://codemy.co
 
 ### Prerequisites
 
-Your system needs [python](https://python.org) installed, version 3.6 and above. This code was built using 3.11.1. Create a virtual environment with the following command:
+Your system needs [python](https://python.org) installed, version 3.6 and above. This code was built using 3.11.1, create a virtual environment with the following command:
 
 - python virtual environment
 
@@ -185,7 +185,7 @@ Project Link: [https://github.com/drobb2020/django-dental-website](https://githu
 
 ## Acknowledgments
 
-Thanks to John Elder at Codemy.com for presenting this course, and to Bootstrapius for the free medical office template built with bootstrap 5
+Thanks to John Elder at Codemy.com for presenting this course, and to Bootstrapious for the free medical office template built with bootstrap 5
 
 - [Choose an Open Source License](https://choosealicense.com)
 - [Img Shields](https://shields.io)
