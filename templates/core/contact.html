@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- Hero Banner-->
+    <section class="hero bg-cover bg-top" style="background: url({% static 'img/contact-banner.jpg' %})">
+      <div class="container z-index-20 mt-lg-5">
+        <div class="row align-items-lg-center gy-4">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <h1 class="text-uppercase text-white">Contact <span class="text-primary">Us</span></h1>
+            <p class="lead text-white mb-0">Provide best quality healthcare for youv</p>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-lg-end">
+            <!-- Breadcrumb-->
+            <nav class="d-inline-block" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}"> <i class="fa fa-home me-2"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Message section for successful appointment or email -->
+    {% if name %}
+    <div class="row">
+      <div class="col-6 text-center mx-auto">
+        <div class="alert alert-success alert-dismissible fade show" data-timeout="5000" role="alert">
+          <strong>Thanks, {{ name }}</strong>, We have received your message, and will respond shortly.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <!-- Location Information -->
+    <section class="p-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <div class="p-5 my-lg-5"><i class="fas fa-3x mb-4 fa-map-marked-alt text-primary"></i>
+              <h3 class="h5 text-uppercase mb-4">Location</h3>
+              <p class="text-muted">22 Baker Street,London, United Kingdom, W1U 3BW</p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center bg-primary text-white">
+            <div class="p-5 my-lg-5"><i class="fas fa-3x mb-4 fa-first-aid"></i>
+              <h3 class="h5 text-uppercase mb-4">Emergency Case</h3>
+              <p class="fw-bold">+0800 2466 7921</p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="p-5 my-lg-5"><i class="fas fa-3x mb-4 fa-envelope text-primary"></i>
+              <h3 class="h5 text-uppercase mb-4">Email</h3>
+              <p class="text-muted">info@yourdomain.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Make Appointment Section-->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-5 border-top border-primary border-2">
+                <h2 class="lined">Make an <span class="text-primary">Appointment</span></h2>
+                <p class="text-muted mb-4">Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non</p>
+                <form class="make-appointment-form" action="!#">
+                  <div class="row gy-4">
+                    <div class="col-lg-6">
+                      <input class="form-control" type="text" name="firstName" placeholder="First Name">
+                    </div>
+                    <div class="col-lg-6">
+                      <input class="form-control" type="text" name="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="col-lg-6">
+                      <input class="form-control" type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6">
+                      <input class="form-control" type="text" name="date" placeholder="Appointment Date">
+                    </div>
+                    <div class="col-lg-6">
+                      <select class="form-select" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="transgender">Transgender</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <select class="form-select" name="department">
+                        <option value="">Department</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="dental">Dental Care </option>
+                        <option value="traumatology">Traumatology</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-12">
+                      <textarea class="form-control" name="sepcialRequest" rows="5" placeholder="Special Request"></textarea>
+                    </div>
+                    <div class="col-lg-12">
+                      <button class="btn btn-primary w-100" type="submit">Submit your request</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center pb-4">
+                <div class="p-1 bg-primary text-white rounded-circle">
+                  <div class="p-4 border border-2 border-white rounded-circle"><i class="fas fa-2x fa-microscope"></i></div>
+                </div>
+                <div class="ms-3">
+                  <h3 class="h5">Leading Technologies</h3>
+                  <p class="text-muted text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-center pb-4">
+                <div class="p-1 bg-primary text-white rounded-circle">
+                  <div class="p-4 border border-2 border-white rounded-circle"><i class="fas fa-2x fa-heartbeat"></i></div>
+                </div>
+                <div class="ms-3">
+                  <h3 class="h5">Care and Relief</h3>
+                  <p class="text-muted text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-center pb-4">
+                <div class="p-1 bg-primary text-white rounded-circle">
+                  <div class="p-4 border border-2 border-white rounded-circle"><i class="fas fa-2x fa-pills"></i></div>
+                </div>
+                <div class="ms-3">
+                  <h3 class="h5">Cost Effective</h3>
+                  <p class="text-muted text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-center pb-4">
+                <div class="p-1 bg-primary text-white rounded-circle">
+                  <div class="p-4 border border-2 border-white rounded-circle"><i class="fas fa-2x fa-history"></i></div>
+                </div>
+                <div class="ms-3">
+                  <h3 class="h5">24/7 Availability</h3>
+                  <p class="text-muted text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Make Appointment Section-->
+    <section>
+      <div class="container text-center">
+        <h2 class="lined lined-center">Drop us a <span class="text-primary">line</span></h2>
+        <p class="text-muted mb-5">Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non</p>
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body border-top border-2 border-primary p-5">
+                <form class="make-appointment-form" action="{% url 'contact' %}" method="POST">
+                  {% csrf_token %}
+                  <div class="row gy-4">
+                    <div class="col-lg-12">
+                      <input class="form-control" type="text" name="name" placeholder="Full Name">
+                    </div>
+                    <div class="col-lg-6">
+                      <input class="form-control" type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-6">
+                      <input class="form-control" type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-12">
+                      <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your request"></textarea>
+                    </div>
+                    <div class="col-lg-12">
+                      <button class="btn btn-primary w-100" type="submit">Send message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock content %}
