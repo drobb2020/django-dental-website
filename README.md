@@ -64,7 +64,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -76,33 +75,20 @@
 
 ## About The Project
 
+This project was built with python and django using a pre-built website template package from Bootstrapius. Meaning that all pages and images, styling were provided. The challenge was to convert the links and images to django syntax. The Drop us a line contact form is also fully functional.
+
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project was built with the following tools:
 
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
 - [Python](https://python.org)
 - [Django](https://www.djangoproject.com/)
-- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 - [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+- [Bootstrapius](https://bootstrapious.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,40 +96,42 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This project was presented as a course project at [codemy.com](https://codemy.com). You will need to purchase a membership to access the videos for the course.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Your system needs [python](https://python.org) installed, version 3.6 and above. This code was built using 3.11.1. Create a virtual environment with the following command:
 
-- npm
+- python virtual environment
 
-  ```sh
-  npm install npm@latest -g
-  ```
+   ```sh
+   python -m venv venv
+   ```
 
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Create a base directory for the project on your system.
+
+2. Change into the directory.
+
+3. Clone the repo (note the . at the end of the command).
 
    ```sh
-   git clone https://github.com/drobb2020/django-dental-website.git
+   git clone https://github.com/drobb2020/django-dental-website.git .
    ```
 
-3. Install NPM packages
+4. Install the needed python packages
 
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
 
-4. Enter your API in `config.js`
+5. Start the application with
 
-   ```js
-   const API_KEY = 'ENTER YOUR API'
+   ```python
+   python manage.py runserver
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -152,11 +140,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+This is a demo course on how to convert a website template system to fully support django syntax.
 
 See the [open issues](https://github.com/drobb2020/django-dental-website/issues) for a full list of proposed features (and known issues).
 
@@ -193,7 +177,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@davidrobb2](https://twitter.com/davidrobb2) - drobb2011@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/drobb2020/repo_name)
+Project Link: [https://github.com/drobb2020/django-dental-website](https://github.com/drobb2020/django-dental-website)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -201,16 +185,10 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/dr
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Thanks to John Elder at Codemy.com for presenting this course, and to Bootstrapius for the free medical office template built with bootstrap 5
 
 - [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
 - [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
